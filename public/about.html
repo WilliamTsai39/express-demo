@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Uniswap 模擬網站</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1f2e, #2b2b3c);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #29293d;
+      padding: 16px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 32px;
+      background: #36364d;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">首頁</a>
+    <a href="/swap.html">Swap 頁面</a>
+    <a href="/about.html">關於我們</a>
+  </nav>
+
+  <div class="container">
+    <h1>關於我們</h1>
+    <p style="text-align: center;">
+      這是一個用 Express.js 製作的 Uniswap 模擬網站，<br>主要展示與以太坊區塊鏈互動的功能，
+      <br>包含餘額查詢、Token 資訊展示與 Swap 介面設計。<br>頁面設計參考 Uniswap 官網風格，<br>
+      目的是幫助開發者熟悉與智能合約、Ethers.js、以及 RESTful API 整合的流程。
+    </p>
+  </div>
+</body>
+</html>

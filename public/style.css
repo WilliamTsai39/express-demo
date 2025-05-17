@@ -1,0 +1,102 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 字體與背景 */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+  }
+  
+  /* 頁首 */
+  header {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: #58a6ff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 主要內容 */
+  main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .swap-container {
+    background-color: #21262d;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .swap-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .swap-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .swap-box label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .swap-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .swap-box button {
+    padding: 10px;
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .swap-box button:hover {
+    background-color: #2ea043;
+  }
+  
+  /* 交換結果 */
+  #swapResult {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* 頁尾 */
+  footer {
+    background-color: #161b22;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  

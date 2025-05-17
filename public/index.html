@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Uniswap 模擬 - Swap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Uniswap 模擬</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="swap.html">Swap</a>
+      <a href="about.html">關於我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="swap-container">
+      <h2>代幣交換</h2>
+      <div class="swap-box">
+        <label for="fromToken">從：</label>
+        <input type="text" id="fromToken" placeholder="輸入代幣名稱，如 ETH" />
+
+        <label for="toToken">到：</label>
+        <input type="text" id="toToken" placeholder="輸入代幣名稱，如 DAI" />
+
+        <button onclick="performSwap()">交換</button>
+      </div>
+      <div id="swapResult"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uniswap 模擬網站</p>
+  </footer>
+
+  <script>
+    function performSwap() {
+      const fromToken = document.getElementById('fromToken').value;
+      const toToken = document.getElementById('toToken').value;
+      document.getElementById('swapResult').innerText =
+        `模擬交換：${fromToken} → ${toToken}（功能尚未實作）`;
+    }
+  </script>
+</body>
+</html>

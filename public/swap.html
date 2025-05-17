@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Uniswap - Swap</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1f2e, #2b2b3c);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #29293d;
+      padding: 16px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 32px;
+      background: #36364d;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      text-align: center;
+      color: #ddd;
+      margin-bottom: 24px;
+    }
+
+    input {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      background: #444;
+      color: white;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #5c67f2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 16px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #3e49d2;
+    }
+
+    #swapResult {
+      margin-top: 16px;
+      font-size: 18px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">首頁</a>
+    <a href="/swap.html">Swap</a>
+    <a href="/about.html">關於我們</a>
+  </nav>
+
+  <div class="container">
+    <h1>Swap 頁面</h1>
+    <p>這裡是模擬的 Swap 操作頁面。</p>
+
+    <!-- swap 表單 -->
+    <input id="fromToken" placeholder="From Token (e.g. ETH)">
+    <input id="toToken" placeholder="To Token (e.g. USDC)">
+    <button onclick="swap()">Swap</button>
+    <div id="swapResult"></div>
+  </div>
+
+  <script>
+    function swap() {
+      const from = document.getElementById('fromToken').value;
+      const to = document.getElementById('toToken').value;
+      document.getElementById('swapResult').innerText =
+        `模擬交換：${from} → ${to}（尚未實作）`;
+    }
+  </script>
+</body>
+</html>
